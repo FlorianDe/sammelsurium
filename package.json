@@ -1,6 +1,9 @@
 {
   "name": "@floriande/sammelsurium",
   "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
