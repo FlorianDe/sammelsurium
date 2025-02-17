@@ -1,4 +1,4 @@
-type InputArrays = ReadonlyArray<ArrayLike<any>>
+type InputArrays = ReadonlyArray<ArrayLike<unknown>>
 
 /**
  * Represents a tuple of cartesian product elements for a set of input arrays.

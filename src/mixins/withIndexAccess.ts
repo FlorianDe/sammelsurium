@@ -1,16 +1,19 @@
-type Constructor<T = {}> = new (...args: any[]) => T
+/* eslint-disable @typescript-eslint/no-unused-vars */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type Constructor<T = object> = new (...args: any[]) => T
 
 export function withIndexAccessor<
   Base extends Constructor,
   K extends {
     [P in keyof InstanceType<Base>]: InstanceType<Base>[P] extends (
       idx: number,
-    ) => any
+    ) => unknown
       ? P
       : never
   }[keyof InstanceType<Base>],
 >(
   BaseClass: Base,
+
   methodName: K extends keyof InstanceType<Base>
     ? InstanceType<Base>[K] extends (idx: number) => infer R
       ? [idx: number] extends Parameters<InstanceType<Base>[K]>
@@ -37,9 +40,10 @@ export function withIndexAccessor<
   }
 
   return class extends BaseClass {
-    [index: number]: ItemType | undefined;
-    [key: string]: unknown;
+    [index: number]: ItemType | undefined
+    [key: string]: unknown
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     constructor(...args: any[]) {
       super(...args)
       return new Proxy(this as InstanceType<Base>, {
@@ -53,7 +57,7 @@ export function withIndexAccessor<
           }
           return Reflect.get(target, prop, receiver)
         },
-      }) as this;
+      }) as this
     }
   }
 }
