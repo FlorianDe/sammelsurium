@@ -71,12 +71,13 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-artifacts
+          path: ./dist
 
       - name: Debug .npmrc file
         run: cat $NPM_CONFIG_USERCONFIG
 
       - name: Show contents of downloaded artifacts
-        run: ls -R ./dist
+        run: ls -R
 
       - name: Publish to npm registry
         run: npm publish --provenance --access public
