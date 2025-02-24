@@ -73,7 +73,7 @@ jobs:
           name: build-artifacts
 
       - name: Debug .npmrc file
-        run: cat ~/.npmrc
+        run: cat $NPM_CONFIG_USERCONFIG
 
       - name: Show contents of downloaded artifacts
         run: ls -R ./dist
