@@ -1,10 +1,10 @@
 {
   "name": "@floriande/sammelsurium",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publishConfig": {
     "access": "public"
   },
-  "description": "",
+  "description": "A collection of useful utilities and helper functions for JavaScript/TypeScript. From small extensions to powerful tools, Sammelsurium enhances your development experience with a diverse set of practical features, ready for any project in Node.js, the web, or beyond.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
