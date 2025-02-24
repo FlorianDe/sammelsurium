@@ -1,8 +1,12 @@
 {
   "name": "@floriande/sammelsurium",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FlorianDe/sammelsurium"
   },
   "description": "A collection of useful utilities and helper functions for JavaScript/TypeScript. From small extensions to powerful tools, Sammelsurium enhances your development experience with a diverse set of practical features, ready for any project in Node.js, the web, or beyond.",
   "main": "./dist/index.js",
