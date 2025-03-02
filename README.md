@@ -1,12 +1,22 @@
 [![CI Build](https://github.com/FlorianDe/sammelsurium/actions/workflows/ci.yml/badge.svg)](https://github.com/FlorianDe/sammelsurium/actions/workflows/ci.yml)
 
-![NPM Version](https://img.shields.io/npm/v/%40floriande%2Fsammelsurium?logo=npm)
+[![NPM Version](https://img.shields.io/npm/v/%40floriande%2Fsammelsurium?logo=npm)](https://www.npmjs.com/package/@floriande/sammelsurium)
+[![Documentation](https://img.shields.io/badge/docs-online-blue?logo=github)](https://floriande.github.io/sammelsurium/)  
+
 [![GitHub commits since latest release](https://img.shields.io/github/commits-since/FlorianDe/sammelsurium/latest)
 ](https://github.com/FlorianDe/sammelsurium/commits/main/)
 
 # Sammelsurium
 
 Sammelsurium is a powerful collection of utilities and helper functions designed to enhance your JavaScript/TypeScript development experience. Whether you're working on a Node.js backend, a modern web application, or any other TypeScript-powered project, this library provides a diverse set of practical tools that streamline your workflow.
+
+## Documentation
+
+The full API reference and usage guides are available at:
+
+**[Sammelsurium Documentation](https://floriande.github.io/sammelsurium/)**  
+
+Explore detailed explanations, examples, and type definitions for all utilities.
 
 ## Features
 
